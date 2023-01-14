@@ -1,0 +1,11 @@
+<%= form_with model: restaurant do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, placeholder: 'Nome do Restaurante' %>
+  <%= f.label :cuisine %>
+  <%= f.text_field :cuisine, placeholder: 'Tipo de Cozinha' %>
+  <%= f.label :chef_name %>
+  <%= f.text_field :chef_name %>
+  <%= f.label :stars %>
+  <%= f.number_field :stars %>
+  <%= f.submit %>
+<% end %>

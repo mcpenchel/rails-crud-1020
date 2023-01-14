@@ -1,0 +1,5 @@
+<h2><%= @restaurant.name %></h2>
+
+<p>(<%= @restaurant.stars %>) Esse restaurante tem comida "<%= @restaurant.cuisine %>" feita pel@ Chef <%= @restaurant.chef_name %>.</p>
+
+<%= link_to 'Remover', restaurant_path(@restaurant), data: {turbo_method: :delete, turbo_confirm: "Você tem certeza?" } %>
